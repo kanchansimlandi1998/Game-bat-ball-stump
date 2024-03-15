@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <title>Document</title>
+  <style>
+    body{
+      text-align: center;
+      margin: 30px;
+      padding: 15px;
+     background-color: black;
+    }
+  #heading1{
+    color: rgb(248, 15, 73);
+    margin: 10px;
+    padding: 5px;
+
+   
+    text-decoration:dotted;
+    text-size-adjust: 30px;
+  }
+  #heading2{
+    color: rgb(92, 40, 249);
+    margin: 5px;
+    padding: 5px;
+
+   
+    text-decoration:dotted;
+    text-size-adjust: 15px;
+
+  }
+  #heading3{
+    color: rgb(244, 239, 224);
+    text-size-adjust: 7.5px;
+  }
+  .button{
+    background-color: lightgreen;
+    border-radius: 10px;
+    border: 1.5px solid rgb(244, 204, 28);
+    padding: 5px 27px;
+  }
+  .button1{
+    background-color: rgb(31, 240, 236);
+    border-radius: 10px;
+    border: 1.5px solid rgb(59, 5, 207);
+    padding: 10px 20px;
+  }
+  .button2{
+    background-color: rgb(224, 8, 8);
+    color: white;
+    border-radius: 10px;
+    border: 1.5px solid rgb(61, 3, 3);
+    padding: 5px 27px;
+  }
+
+  </style>
+</head>
+<body >
+  <div id="container">
+  <h1 id="heading1">Bat Ball & Stump Game</h1>
+  <h2 id="heading2"> Let's Play the Game..</h2>
+  <h3 id="heading3">Everyone get 3 chances at a time !</h3>
+  <button class="button" onclick=" 
+//console.log('you have choosen a bat');
+let randomNumber=Math.random()*3;
+let computerChoice;
+if(randomNumber>0 && randomNumber<1 ){
+  computerChoice='bat';
+}else if
+  (randomNumber>1    &&  randomNumber<2){
+
+    computerChoice='ball';
+  }
+  else{
+    computerChoice='stump';
+ let resultMsg;
+if(computerChoice==='ball'){
+  resultMsg='user won.';
+  alert(`you have choosen a bat, computer Choice is ${computerChoice} and ${resultMsg}`);
+
+
+
+}
+else if(computerChoice==='bat'){
+  resultMsg='have a tie!';
+  alert(`you have choosen a bat, computer Choice is ${computerChoice} and ${resultMsg}`);
+
+
+
+}
+else(computerChoice==='stump')
+{
+  resultMsg='computer won.';
+  alert(`you have choosen a bat, computer Choice is ${computerChoice} and ${resultMsg}`);
+
+
+}
+
+//alert(`you have choosen a bat, computer Choice is ${computerChoice} and ${resultMsg}`);
+
+
+  }">Bat</button>
+
+<button class="button1" onclick=" 
+randomNumber1=Math.random()*3;
+ let computerChoice2;
+if(randomNumber1>0 && randomNumber1<1 ){
+  computerChoice2='bat';
+}else if
+  (randomNumber1>1    &&  randomNumber1<2){
+
+    computerChoice2='ball';
+  }
+  else{
+    computerChoice2='stump';
+  }
+ 
+  let resultMsg1;
+if(computerChoice2==='ball'){
+  resultMsg1='the game is tie.';
+  alert(`user choosen a ball, computerChoice is ${computerChoice2} and ${resultMsg1}`);
+}
+else if(computerChoice2==='bat'){
+  resultMsg1=`compuer won the game`;
+  alert(`user choosen a ball, computerChoice is ${computerChoice2} and ${resultMsg1}`);
+}
+else(computerChoice2==='stump')
+{
+  resultMsg1='user won the game.';
+  alert(`user choosen a ball, computerChoice is ${computerChoice2} and ${resultMsg1}`);
+}
+
+//alert(`user choosen a ball, computerChoice is ${computerChoice2} and ${resultMsg1}`);
+
+">Ball</button>
+
+  <button class="button2" onclick="
+  randomNumber2= Math.random()*3;
+  let computerChoice3;
+  if(randomNumber2>0 && randomNumber2<1){
+    computerChoice3='bat';
+  }
+  else if(randomNumber2>1 && randomNumber2<2){
+  computerChoice3='ball';
+  }
+  else{
+    computerChoice3='stump';
+  }
+  let resultMsg2;
+  if(computerChoice3==='ball'){
+    resultMsg2='you won the game .';
+    alert(` you have taken stump. computer choice is  ${computerChoice3} and ${resultMsg2}`);
+  }
+  else if(computerChoice3==='stump'){
+    resultMsg2='the game is tie.';
+    alert(` you have taken stump. computer choice is  ${'computerChoice3'} and ${'resultMsg2'}`);
+  }
+  else(computerChoice3==='bat')
+  {
+resultMsg2='computer won the game.';
+
+  }
+
+
+
+">Stump</button>
+  </div>
+</body>
+</html>
